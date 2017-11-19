@@ -1,0 +1,48 @@
+html{
+  font-size: 18px;
+}
+body{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+/* HEADER */
+header{
+  display: flex;
+  height: 64px;
+  padding: 0 24px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img{
+  height: 2.5rem;
+}
+.title{
+  font-weight: bold;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-right: 16px;
+}
+nav li:last-child{
+  padding-right: 0;
+}
+nav.mobile{
+  display: none;
+}
