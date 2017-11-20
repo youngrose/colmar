@@ -1,14 +1,129 @@
+/* FONTS */
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(https://fonts.gstatic.com/s/notosans/v7/ByLA_FLEa-16SpQuTcQn4KE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(https://fonts.gstatic.com/s/notosans/v7/ByLA_FLEa-16SpQuTcQn4Igp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(https://fonts.gstatic.com/s/notosans/v7/9Z3uUWMRR7crzm1TjRicDogd9OEPUCN3AdYW0e8tat4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(https://fonts.gstatic.com/s/notosans/v7/9Z3uUWMRR7crzm1TjRicDv79_ZuUxCigM2DespTnFaw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v7/erE3KsIWUumgD1j_Ca-V-4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v7/LeFlHvsZjXu2c3ZRgBq9nJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v7/PIbvSEyHEdL91QLOQRnZ14joYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v7/PIbvSEyHEdL91QLOQRnZ1xampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 html{
   font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
 }
+
 body{
   width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #FCFCFC;
 }
 .container{
-  width: 960px;
+  width: 1024px;
   margin: 0 auto;
+}
+.image-container img{
+  max-width: 100%;
+}
+.image-container{
+  overflow: hidden;
+}
+p{
+  font-size: .8rem;
+  line-height: 1.1rem;
+  padding: 4px 0;
+  color: #484848;
+}
+a{
+  font-size: .9rem;
+  color: blue;
+}
+h1{
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+h3{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+h1,
+h3{
+  padding: .5rem 0;
+  color: #484848;
 }
 /* HEADER */
 header{
@@ -16,8 +131,7 @@ header{
   height: 64px;
   padding: 0 24px;
   width: 100%;
-  background-color: white;
-  border-bottom: 1px solid black;
+  background-color: #FCFCFC;
 }
 .logo{
   display: flex;
@@ -45,4 +159,112 @@ nav li:last-child{
 }
 nav.mobile{
   display: none;
+}
+/*MAIN CONTENT */
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+/*START BANNER */
+#start{
+  background-color: #DEE1E5;
+}
+#start .image-container{
+  width: 60%;
+}
+#start .banner-text{
+  width: 40%;
+  padding-left: 24px;
+}
+.banner-text span{
+  display: block;
+  background-color: #484848;
+  color: white;
+  width: 95%;
+  padding: 8px 0;
+  margin-top: .5rem;
+  text-align: center;
+  transition: all 0.5s 50ms;
+}
+.banner-text span:hover{
+  background-color: #FCFCFC;
+  color: black;
+}
+.banner{
+  display: flex;
+  align-items: center;
+  padding: 32px 24px;
+}
+/*INFORMATION SECTION*/
+#information{
+  margin-bottom: 32px;
+}
+.practice{
+  width: 60%;
+  padding-right: 24px;
+  margin-top: 1rem;
+}
+.quote{
+  margin-top: 32px;
+}
+.information{
+  width: 40%;
+}
+.information .image-container{
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+.info-text{
+  margin-top: 0.25rem;
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  transition: all 0.5s;
+}
+.info:hover{
+  background-color: #DEE1E5;
+}
+/*COURSES SECTION */
+#courses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #DEE1E5;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: center;
+}
+#courses-title{
+  text-align: center;
+  display: block;
+  background-color: #DEE1E5;
+  padding: 32px 0;
+}
+.course .image-container{
+  height: auto;
+  width: 100%;
+}
+.course{
+  margin: 0 16px;
+  background-color: white;
+  width: 29%;
+  height: 300px;
+  margin-bottom: 32px;
+}
+.course-text{
+  margin: 16px;
+}
+.course-text p{
+  padding: 8px 0;
+}
+.course-text h3{
+  padding-top: 2px;
 }
