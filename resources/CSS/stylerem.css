@@ -79,8 +79,9 @@
   src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/*UNIVERSAL STYLING */
 html{
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Noto Sans', sans-serif;
 }
 body{
@@ -90,7 +91,7 @@ body{
   background-color: #FCFCFC;
 }
 .container{
-  width: 1024px;
+  width: 64rem;
   margin: 0 auto;
 }
 .image-container img{
@@ -103,12 +104,12 @@ body{
   max-width: 100%;
 }
 .video-container{
-  overflow: hidden;
+  overflow: visible;
 }
 p{
   font-size: .8rem;
   line-height: 1.1rem;
-  padding: 4px 0;
+  padding: .25rem 0;
   color: #484848;
 }
 a{
@@ -130,11 +131,18 @@ h3{
   padding: .5rem 0;
   color: #484848;
 }
+li{
+  font-size: .9rem;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
 /* HEADER */
 header{
   display: flex;
-  height: 64px;
-  padding: 0 24px;
+  height: 4rem;
+  padding: 0 2rem;
   width: 100%;
   background-color: #FCFCFC;
 }
@@ -157,7 +165,7 @@ nav li{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  padding-right: 16px;
+  padding-right: 1rem;
 }
 nav li:last-child{
   padding-right: 0;
@@ -187,17 +195,20 @@ nav.mobile{
 }
 #start .banner-text{
   width: 40%;
-  padding-left: 24px;
+  padding-left: 1.5rem;
+}
+.image-container.mobile{
+  display: none;
 }
 .banner-text span{
   display: block;
   background-color: #484848;
   color: white;
   width: 95%;
-  padding: 8px 0;
+  padding: 1rem 0;
   margin-top: .5rem;
   text-align: center;
-  transition: all 0.5s 50ms;
+  transition: all 0.5s;
 }
 .banner-text span:hover{
   background-color: #FCFCFC;
@@ -206,19 +217,19 @@ nav.mobile{
 .banner{
   display: flex;
   align-items: center;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 /*INFORMATION SECTION & THESIS SECTION*/
 #information{
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .practice{
   width: 60%;
-  padding-right: 24px;
+  padding-right: 1.5rem;
   margin-top: 1rem;
 }
 .quote{
-  margin-top: 32px;
+  margin-bottom: 2rem;
 }
 .information{
   width: 40%;
@@ -226,7 +237,7 @@ nav.mobile{
 .information .image-container{
   height: auto;
   width: 35%;
-  padding: 16px;
+  padding: 1rem;
 }
 .info-text{
   margin-top: 0.25rem;
@@ -234,57 +245,192 @@ nav.mobile{
   align-items: center;
   justify-content: center;
   align-content: center;
-
 }
 .info{
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: #FCFCFC;
   transition: all 0.5s;
 }
 .info:hover{
   background-color: #DEE1E5;
 }
 /*COURSES SECTION */
-#courses{
+#courses-desktop{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #DEE1E5;
-  padding: 0 40px;
+  padding: 0 2.5rem;
   align-items: center;
   justify-content: center;
 }
-#courses-title{
+#courses-mobile{
+  display: none;
+}
+#section-title{
   text-align: center;
   display: block;
+  padding: 2rem 0;
+}
+.shift{
   background-color: #DEE1E5;
-  padding: 32px 0;
 }
 .course .image-container{
   height: auto;
   width: 100%;
 }
 .course{
-  margin: 0 16px;
+  margin: 0 1rem;
   background-color: white;
   width: 29%;
-  height: 300px;
-  margin-bottom: 32px;
+  height: 18.75rem;
+  margin-bottom: 2rem;
   box-shadow: 2px 2px 3px #484848;
 }
 .course-text{
-  margin: 16px;
+  margin: 1rem;
 }
 .course-text p{
-  padding: 8px 0;
+  padding: .5rem 0;
 }
 .course-text h3{
-  padding-top: 2px;
+  padding-top: .125rem;
 }
 /*FOOTER */
 footer{
   display: flex;
   border-top: 1px solid #DEE1E5;
-  padding: 16px 24px 32px 24px;
+  padding: 1rem 1.5rem 2rem 1.5rem;
 }
+
+/* MEDIA QUERIES */
+
+/*TABLET + SMALL SCREENS */
+@media only screen and (max-width: 1024px){
+  .container{
+    width: auto;
+  }
+  .course{
+    width: 40%;
+    height: 18.75rem;
+  }
+}
+/*PHONE SCREEN */
+@media only screen and (max-width: 540px){
+  .container{
+    width: auto;
+  }
+  .desktop{
+    display: none;
+  }
+  nav.mobile{
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+  }
+  nav li{
+    padding-right: 4rem;
+  }
+  .logo.top{
+    display: none;
+  }
+  .images-container{
+    display: inline-block;
+  }
+  .banner{
+    display: block;
+    padding: 0 0 2rem 0;
+    margin-bottom: 2rem;
+  }
+  #start .banner{
+    margin: 0;
+  }
+  #start .image-container{
+    width: auto;
+  }
+  #start .banner-text{
+    width: auto;
+    padding: 1rem;
+  }
+  .banner-text span{
+    display: block;
+    background-color: #484848;
+    color: white;
+    width: auto;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    text-align: center;
+    transition: all 0.5s 50ms;
+  }
+  /* PRACTICE + INFORMATION SECTION */
+  .practice{
+    display: none;
+  }
+  .practice.mobile{
+    display: flex;
+    width: auto;
+    padding-right: 0;
+  }
+  .image-container.mobile{
+    display: block;
+  }
+  .information{
+    width: auto;
+  }
+  .information .image-container{
+    height: auto;
+    width: auto;
+    padding: 1rem;
+  }
+  .information .image-container:hover img{
+    filter: drop-shadow(5px 5px 5px #DEE1E5);
+    transition: all 0.25s ease-in;
+  }
+  .info-text{
+    margin-top: 0.25rem;
+    width: auto;
+    display: block;
+    padding: 0 0 4rem 1rem;
+    border: 1px dotted #DEE1E5;
+  }
+  .info{
+    flex-direction: column;
+  }
+  .info:hover{
+    background-color: #FCFCFC;
+  }
+  /*COURSES SECTION */
+  #courses-desktop{
+    display:none;
+  }
+  .shift{
+    margin-top: -7rem;
+    background-color: #FCFCFC;
+  }
+  #courses-mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #FCFCFC;
+    padding: 1.5rem .5rem;
+    margin: 1.5rem .5rem;
+    border: 1px dotted #DEE1E5;
+  }
+  .courses-mobile{
+    padding: 1rem;
+    margin-bottom: .5rem;
+    background-color: #DEE1E5;
+    border: 1px solid #DEE1E5;
+    transition: all 0.5s;
+  }
+  .courses-mobile:hover{
+    background-color: #FCFCFC;
+    border: 1 px solid #484848;
+  }
+  .courses-mobile:last-child{
+    margin-bottom: 0rem;
+  }
+  /*THESIS SECTION */
+  .information{
+    width: auto;
+  }
