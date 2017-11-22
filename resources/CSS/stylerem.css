@@ -312,7 +312,7 @@ footer{
     width: auto;
   }
   .course{
-    width: 40%;
+    width: 35%;
     height: 18.75rem;
   }
 }
@@ -384,7 +384,7 @@ footer{
     padding: 1rem;
   }
   .information .image-container:hover img{
-    filter: drop-shadow(5px 5px 5px #DEE1E5);
+    filter: drop-shadow(3px 3px 2px #484848);
     transition: all 0.25s ease-in;
   }
   .info-text{
